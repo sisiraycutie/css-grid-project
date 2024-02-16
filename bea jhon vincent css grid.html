@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Gallery</title>
+  <style>
+    header {
+text-align: center;
+text-transform: uppercase;
+color: black;
+
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      background-image: url(https://i.gifer.com/TRkO.gif);
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr); 
+      gap: 20px; 
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .gallery-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-sizing: border-box;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      transition: transform 0.3s;
+      cursor: pointer;
+      box-sizing: border-box;
+    }
+
+    .gallery-item img:hover {
+      transform: scale(1.1);
+    }
+
+    .caption {
+      text-align: center;
+      margin-top: 10px;
+      color: black;
+    }
+
+    button {
+      color: black;
+      font-size: medium;
+      cursor: pointer;
+      background-color: grey;
+      border-radius: 2px
+      padding: 8px 12px;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+    
+    button:hover {
+      background-color: #bbb;
+    }
+  
+  </style>
+</head>
+<body>
+
+  <header>
+<H1>
+  CSS GRID Gallery
+</H1>
+
+  </header>
+
+<div class="gallery">
+  <div class="gallery-item">
+    <img src="https://images.pexels.com/photos/17425856/pexels-photo-17425856/free-photo-of-single-tree-in-countryside.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Image 3">
+    <p class="caption">Church</p>
+    <button type="button">button</button>
+  </div>
+  <div class="gallery-item">
+    <img src="https://images.pexels.com/photos/17474624/pexels-photo-17474624/free-photo-of-black-and-white-photo-of-people-on-a-sea-pier-observation-spot.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Image 3">
+    <p class="caption">Church</p>
+    <button type="button">button</button>
+  </div>
+  <div class="gallery-item">
+    <img src="https://images.pexels.com/photos/16885381/pexels-photo-16885381/free-photo-of-woman-on-the-background-of-mountains.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Image 3">
+    <p class="caption">Church</p>
+    <button type="button">button</button>
+  </div>
+  <div class="gallery-item">
+    <img src="https://images.pexels.com/photos/12714871/pexels-photo-12714871.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Image 3">
+    <p class="caption">Church</p>
+    <button type="button">button</button>
+  </div>
+  <div class="gallery-item">
+    <img src="https://images.pexels.com/photos/19806430/pexels-photo-19806430/free-photo-of-halde-norddeutschland-in-neukirchen-vluyn-germany.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Image 3">
+    <p class="caption">Church</p>
+    <button type="button">button</button>
+  </div>
+  <div class="gallery-item">
+    <img src="https://images.pexels.com/photos/19455522/pexels-photo-19455522/free-photo-of-close-up-of-a-couple-playing-the-piano-together.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Image 3">
+    <p class="caption">Church</p>
+    <button type="button">button</button>
+  </div>
+  <div class="gallery-item">
+    <img src="https://images.pexels.com/photos/20192042/pexels-photo-20192042/free-photo-of-a-woman-in-glasses-and-a-striped-shirt-sitting-on-a-telephone.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Image 3">
+    <p class="caption">Church</p>
+    <button type="button">button</button>
+  </div>
+  <div class="gallery-item">
+    <img src="https://images.pexels.com/photos/3048527/pexels-photo-3048527.png?auto=compress&cs=tinysrgb&w=600" alt="Image 3">
+    <p class="caption">Church</p>
+    <button type="button">button</button>
+  </div>
+  <div class="gallery-item">
+    <img src="https://images.pexels.com/photos/4977270/pexels-photo-4977270.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image 3">
+    <p class="caption">Church</p>
+    <button type="button">button</button>
+  </div>
+  <div class="gallery-item">
+    <img src="https://images.pexels.com/photos/4757966/pexels-photo-4757966.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image 3">
+    <p class="caption">Church</p>
+    <button type="button">button</button>
+  </div>
+  <div class="gallery-item">
+    <img src="https://images.pexels.com/photos/5976851/pexels-photo-5976851.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image 3">
+    <p class="caption">Church</p>
+    <button type="button">button</button>
+  </div>
+  <div class="gallery-item">
+    <img src="https://images.pexels.com/photos/5846890/pexels-photo-5846890.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image 3">
+    <p class="caption">Church</p>
+    <button type="button">button</button>
+  </div>
+  <div class="gallery-item">
+    <img src="https://images.pexels.com/photos/5432964/pexels-photo-5432964.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image 3">
+    <p class="caption">Church</p>
+    <button type="button">button</button>
+  </div>
+  <div class="gallery-item">
+    <img src="https://images.pexels.com/photos/6999456/pexels-photo-6999456.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image 3">
+    <p class="caption">Church</p>
+    <button type="button">button</button>
+  </div>
+  <div class="gallery-item">
+    <img src="https://images.pexels.com/photos/1793525/pexels-photo-1793525.jpeg?auto=compress&cs=tinysrgb&w=600"
+    <p class="caption">Church</p>
+    <button type="button">button</button>
+  </div>
+  <div class="gallery-item">
+    <img src="https://images.pexels.com/photos/4918385/pexels-photo-4918385.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image 3">
+    <p class="caption">Church</p>
+    <button type="button">button</button>
+  </div>
+  <div class="gallery-item">
+    <img src="https://images.pexels.com/photos/5267760/pexels-photo-5267760.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image 3">
+    <p class="caption">Church</p>
+    <button type="button">button</button>
+  </div>
+  <div class="gallery-item">
+    <img src="https://images.pexels.com/photos/6801531/pexels-photo-6801531.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image 3">
+    <p class="caption">Church</p>
+    <button type="button">button</button>
+  </div>
+  <div class="gallery-item">
+    <img src="https://images.pexels.com/photos/5891211/pexels-photo-5891211.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image 3">
+    <p class="caption">Church</p>
+    <button type="button">button</button>
+  </div>
+  <div class="gallery-item">
+    <img src="https://images.pexels.com/photos/5828410/pexels-photo-5828410.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image 3">
+    <p class="caption">Church</p>
+    <button type="button">button</button>
+  </div>
+</div>
+
+</body>
+</html>
